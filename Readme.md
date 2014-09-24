@@ -32,7 +32,7 @@ fork the project and submit a patch :)
 
 Update git submodules and run:
 
-    $ make test
+    $ npm test
 
 # License 
 
