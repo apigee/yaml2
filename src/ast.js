@@ -15,11 +15,12 @@ function AST(tokens, str) {
 }
 
 // Inherit from Parser
-AST.prototype = Parser.prototype;
+AST.prototype = new Parser();
 
 // constructor functions
 
 function YAMLDoc() {}
+
 function YAMLHash() {
   this.keys = [];
 }
@@ -27,10 +28,13 @@ function YAMLHashKey(id) {
   this.keyName = id[1][0]
 }
 
+function YAMLList() {
+  this.items = [];
+}
+
 function YAMLInt(token){
   this.value = parseInt(token[1][0]);
 }
-
 function YAMLString(token) {
   this.value = token[1][0];
 }
@@ -43,10 +47,11 @@ function YAMLNull(token) {
 function YAMLFloat(token) {
   this.value = token[1][0];
 }
+function YAMLDate(token) {
+  this.value = token[1][0];
+}
 
 
-function YAMLList() {}
-function YAMLDate() {}
 
 
 AST.prototype.parse = function() {
@@ -122,16 +127,19 @@ AST.prototype.parseHash = function() {
  */
 
 AST.prototype.parseInlineHash = function() {
-  var hash = {}, id, i = 0
+  var hash = new YAMLHash(), id, i = 0
   this.accept('{')
   while (!this.accept('}')) {
     this.ignoreSpace()
     if (i) this.expect(',', 'expected comma')
     this.ignoreWhitespace()
     if (this.peekType('id') && (id = this.advanceValue())) {
+      var hashKey = new YAMLHashKey(id);
+      this.assignStartEnd(hashKey, id);
       this.expect(':', 'expected semi-colon after id')
       this.ignoreSpace()
-      hash[id] = this.parse()
+      hashKey.value = this.parse();
+      hash.keys.push(hashKey);
       this.ignoreWhitespace()
     }
     ++i
@@ -146,14 +154,14 @@ AST.prototype.parseInlineHash = function() {
  */
 
 AST.prototype.parseList = function() {
-  var list = []
+  var list = new YAMLList();
   while (this.accept('-')) {
     this.ignoreSpace()
     if (this.accept('indent'))
-      list.push(this.parse()),
+      list.items(this.parse()),
       this.expect('dedent', 'list item not properly dedented')
     else
-      list.push(this.parse())
+      list.items.push(this.parse())
     this.ignoreSpace()
   }
   return list
@@ -164,13 +172,13 @@ AST.prototype.parseList = function() {
  */
 
 AST.prototype.parseInlineList = function() {
-  var list = [], i = 0
+  var list = new YAMLList(), i = 0
   this.accept('[')
   while (!this.accept(']')) {
     this.ignoreSpace()
     if (i) this.expect(',', 'expected comma')
     this.ignoreSpace()
-    list.push(this.parse())
+    list.items.push(this.parse())
     this.ignoreSpace()
     ++i
   }

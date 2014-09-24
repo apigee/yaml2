@@ -13,10 +13,12 @@ fs.readdir(__dirname, function (err, files) {
         console.log('\n')
         console.log(fileContents)
         console.log('\nparse outputs:\n')
-        console.log(util.inspect(yaml.eval(fileContents), {showHidden: false, depth: null}));
+        var parsed = yaml.eval(fileContents);
+        console.log(util.inspect(parsed, {showHidden: false, depth: null}));
         console.log('\n')
         console.log('\nast outputs:\n')
-        console.log(util.inspect(yaml.ast(fileContents), {showHidden: false, depth: null}));
+        var asted = yaml.ast(fileContents);
+        console.log(util.inspect(asted, {showHidden: false, depth: null}));
       });
     }
   });
