@@ -26,7 +26,7 @@ fork the project and submit a patch :)
   
 ## Installation
 
-    $ npm install yaml
+    $ npm install apigee/yaml
     
 # Testing
 

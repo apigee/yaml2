@@ -1,5 +1,5 @@
 {
-  "name": "yaml",
+  "name": "apigee/yaml",
   "version": "0.3.0",
   "description": "Yaml parser",
   "author": [
