@@ -1,5 +1,7 @@
 
-# YAML
+# YAML2
+
+YAML2 is a fork of [JS-YAML](https://github.com/visionmedia/js-yaml) which adds functionality to get an abstract syntax tree out of a YAML string.
 
 CommonJS JavaScript YAML parser, fast and tiny. Although this implementation
 does not currently support the entire YAML specification, feel free to
@@ -26,7 +28,7 @@ fork the project and submit a patch :)
   
 ## Installation
 
-    $ npm install apigee/yaml
+    $ npm install yaml2
     
 # Testing
 
