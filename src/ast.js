@@ -12,6 +12,7 @@ function AST(tokens, str) {
   // Windows new line support (CR+LF, \r\n)
   str = str.replace(/\r\n/g, '\n');
   this.lines = str.split('\n');
+  this.strLength = str.length;
 }
 
 // Inherit from Parser
@@ -35,6 +36,9 @@ function YAMLList() {
 function YAMLInt(token){
   this.value = parseInt(token[1][0]);
 }
+function YAMLFloat(token) {
+  this.value = parseFloat(token[1][0]);
+}
 function YAMLString(token) {
   this.value = token[1][0];
 }
@@ -42,9 +46,6 @@ function YAMLBoolean(token) {
   this.value = token[1][0];
 }
 function YAMLNull(token) {
-  this.value = token[1][0];
-}
-function YAMLFloat(token) {
   this.value = token[1][0];
 }
 function YAMLDate(token) {
@@ -94,6 +95,8 @@ AST.prototype.parseDoc = function() {
   this.expect('dedent', 'document not properly dedented')
   var yamlDoc = new YAMLDoc();
   yamlDoc.value = val;
+  yamlDoc.start = this.indexToRowCol(0);
+  yamlDoc.end = this.indexToRowCol(this.strLength - 1);
   return yamlDoc;
 }
 
@@ -119,6 +122,12 @@ AST.prototype.parseHash = function() {
     hash.keys.push(hashKey);
     this.ignoreSpace();
   }
+
+  // Add start and end to the hash based on start of the first key
+  // and end of the last key
+  hash.start = hash.keys[0].start;
+  hash.end = hash.keys[hash.keys.length - 1].end;
+
   return hash
 }
 
@@ -144,6 +153,12 @@ AST.prototype.parseInlineHash = function() {
     }
     ++i
   }
+
+  // Add start and end to the hash based on start of the first key
+  // and end of the last key
+  hash.start = hash.keys[0].start;
+  hash.end = hash.keys[hash.keys.length - 1].end;
+
   return hash
 }
 
@@ -164,6 +179,12 @@ AST.prototype.parseList = function() {
       list.items.push(this.parse())
     this.ignoreSpace()
   }
+
+  // Add start and end to the list based on start of the first item
+  // and end of the last item
+  list.start = list.items[0].start;
+  list.end = list.items[list.items.length - 1].end;
+
   return list
 }
 
@@ -182,6 +203,12 @@ AST.prototype.parseInlineList = function() {
     this.ignoreSpace()
     ++i
   }
+
+  // Add start and end to the list based on start of the first item
+  // and end of the last item
+  list.start = list.items[0].start;
+  list.end = list.items[list.items.length - 1].end;
+
   return list
 }
 
@@ -213,12 +240,14 @@ AST.prototype.indexToRowCol = function (index) {
     if (index > this.lines[l].length){
       index -= this.lines[l].length;
     } else {
-      return {
-        row: l,
-        column: index
-      };
+      break;
     }
   }
+
+  return {
+    row: l,
+    column: index
+  };
 }
 
 module.exports = AST;
