@@ -33,7 +33,7 @@ fork the project and submit a patch :)
     $ npm install yaml2
 
 ### Via Bower
-    $ bower install yaml
+    $ bower install yaml_2
     
 # Testing
 
