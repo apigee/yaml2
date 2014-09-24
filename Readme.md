@@ -7,6 +7,10 @@ fork the project and submit a patch :)
 
 # Usage
 
+
+#### Get JavaScript object off YAML string
+    require('yaml').eval(string_of_yaml)
+#### Get Abstract Syntax Tree(AST) off a YAML string
     require('yaml').eval(string_of_yaml)
     
 # Currently Supports
