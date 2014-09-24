@@ -16,11 +16,10 @@ function AST(tokens, str) {
   this.strLength = str.length;
 }
 
-// Inherit from Parser
+// Inherits from Parser
 AST.prototype = new Parser();
 
 // constructor functions
-
 function YAMLDoc() {}
 
 function YAMLHash() {
@@ -59,27 +58,24 @@ function YAMLDate(token) {
   this.value = helpers.parseTimestamp(token[1]);
 }
 
-
-
-
 AST.prototype.parse = function() {
   switch (this.peek()[0]) {
     case 'doc':
-      return this.parseDoc()
+      return this.parseDoc();
     case '-':
-      return this.parseList()
+      return this.parseList();
     case '{':
-      return this.parseInlineHash()
+      return this.parseInlineHash();
     case '[':
-      return this.parseInlineList()
+      return this.parseInlineList();
     case 'id':
-      return this.parseHash()
+      return this.parseHash();
     case 'string':
       return this.parseValue(YAMLString);
     case 'timestamp':
-      return this.parseValue(YAMLDate)
+      return this.parseValue(YAMLDate);
     case 'float':
-      return this.parseValue(YAMLFloat)
+      return this.parseValue(YAMLFloat);
     case 'int':
       return this.parseValue(YAMLInt);
     case 'true':
@@ -88,30 +84,19 @@ AST.prototype.parse = function() {
     case 'null':
       return this.parseValue(YAMLNull);
   }
-}
-
-
-/**
- * '---'? indent expr dedent
- */
+};
 
 AST.prototype.parseDoc = function() {
-  this.accept('doc')
-  this.expect('indent', 'expected indent after document')
-  var val = this.parse()
-  this.expect('dedent', 'document not properly dedented')
+  this.accept('doc');
+  this.expect('indent', 'expected indent after document');
+  var val = this.parse();
+  this.expect('dedent', 'document not properly dedented');
   var yamlDoc = new YAMLDoc();
   yamlDoc.value = val;
   yamlDoc.start = this.indexToRowCol(0);
   yamlDoc.end = this.indexToRowCol(this.strLength - 1);
   return yamlDoc;
 }
-
-/**
- *  ( id ':' - expr -
- *  | id ':' - indent expr dedent
- *  )+
- */
 
 AST.prototype.parseHash = function() {
   var id, hash = new YAMLHash();
@@ -135,30 +120,31 @@ AST.prototype.parseHash = function() {
   hash.start = hash.keys[0].start;
   hash.end = hash.keys[hash.keys.length - 1].end;
 
-  return hash
+  return hash;
 }
 
-/**
- * '{' (- ','? ws id ':' - expr ws)* '}'
- */
-
 AST.prototype.parseInlineHash = function() {
-  var hash = new YAMLHash(), id, i = 0
-  this.accept('{')
+  var hash = new YAMLHash(), id, i = 0;
+  this.accept('{');
+
   while (!this.accept('}')) {
-    this.ignoreSpace()
-    if (i) this.expect(',', 'expected comma')
-    this.ignoreWhitespace()
+    this.ignoreSpace();
+
+    if (i) {
+      this.expect(',', 'expected comma');
+    }
+    this.ignoreWhitespace();
+
     if (this.peekType('id') && (id = this.advanceValue())) {
       var hashKey = new YAMLHashKey(id);
       this.assignStartEnd(hashKey, id);
-      this.expect(':', 'expected semi-colon after id')
-      this.ignoreSpace()
+      this.expect(':', 'expected semi-colon after id');
+      this.ignoreSpace();
       hashKey.value = this.parse();
       hash.keys.push(hashKey);
-      this.ignoreWhitespace()
+      this.ignoreWhitespace();
     }
-    ++i
+    ++i;
   }
 
   // Add start and end to the hash based on start of the first key
@@ -166,25 +152,23 @@ AST.prototype.parseInlineHash = function() {
   hash.start = hash.keys[0].start;
   hash.end = hash.keys[hash.keys.length - 1].end;
 
-  return hash
+  return hash;
 }
-
-/**
- *  ( '-' - expr -
- *  | '-' - indent expr dedent
- *  )+
- */
 
 AST.prototype.parseList = function() {
   var list = new YAMLList();
+
   while (this.accept('-')) {
-    this.ignoreSpace()
-    if (this.accept('indent'))
-      list.items(this.parse()),
-      this.expect('dedent', 'list item not properly dedented')
-    else
-      list.items.push(this.parse())
-    this.ignoreSpace()
+    this.ignoreSpace();
+
+    if (this.accept('indent')) {
+      list.items(this.parse());
+      this.expect('dedent', 'list item not properly dedented');
+    } else{
+      list.items.push(this.parse());
+    }
+
+    this.ignoreSpace();
   }
 
   // Add start and end to the list based on start of the first item
@@ -192,23 +176,21 @@ AST.prototype.parseList = function() {
   list.start = list.items[0].start;
   list.end = list.items[list.items.length - 1].end;
 
-  return list
+  return list;
 }
-
-/**
- * '[' (- ','? - expr -)* ']'
- */
 
 AST.prototype.parseInlineList = function() {
-  var list = new YAMLList(), i = 0
-  this.accept('[')
+  var list = new YAMLList(), i = 0;
+
+  this.accept('[');
+
   while (!this.accept(']')) {
-    this.ignoreSpace()
-    if (i) this.expect(',', 'expected comma')
-    this.ignoreSpace()
-    list.items.push(this.parse())
-    this.ignoreSpace()
-    ++i
+    this.ignoreSpace();
+    if (i) this.expect(',', 'expected comma');
+    this.ignoreSpace();
+    list.items.push(this.parse());
+    this.ignoreSpace();
+    ++i;
   }
 
   // Add start and end to the list based on start of the first item
@@ -218,11 +200,6 @@ AST.prototype.parseInlineList = function() {
 
   return list
 }
-
-/**
- *
- * use the constructor function t
- */
 
 AST.prototype.parseValue = function(constructorFn) {
   var token = this.advance();
@@ -237,9 +214,6 @@ AST.prototype.assignStartEnd = function (node, token) {
   node.end = this.indexToRowCol(token[3]);
 }
 
-/*
- * Converts index to row,col object
-*/
 AST.prototype.indexToRowCol = function (index) {
   if (!this.lines) return null;
 
