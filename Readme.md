@@ -28,11 +28,16 @@ fork the project and submit a patch :)
   
 ## Installation
 
+
+### Via NPM
     $ npm install yaml2
+
+### Via Bower
+    $ bower install yaml2
     
 # Testing
 
-Update git submodules and run:
+Run:
 
     $ npm test
 
