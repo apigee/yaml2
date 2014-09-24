@@ -1,4 +1,5 @@
 var Parser = require('./parser');
+var helpers = require('./helpers');
 
 // --- AST
 
@@ -34,22 +35,28 @@ function YAMLList() {
 }
 
 function YAMLInt(token){
+  this.raw = token[1][0];
   this.value = parseInt(token[1][0]);
 }
 function YAMLFloat(token) {
+  this.raw = token[1][0];
   this.value = parseFloat(token[1][0]);
 }
 function YAMLString(token) {
+  this.raw = token[1][0];
   this.value = token[1][0];
 }
 function YAMLBoolean(token) {
+  this.raw = token[1][0];
   this.value = token[1][0];
 }
 function YAMLNull(token) {
-  this.value = token[1][0];
+  this.raw = token[1][0];
+  this.value = null;
 }
 function YAMLDate(token) {
-  this.value = token[1][0];
+  this.raw = token[1][0];
+  this.value = helpers.parseTimestamp(token[1]);
 }
 
 

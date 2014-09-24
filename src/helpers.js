@@ -18,4 +18,26 @@ function context(str) {
   return 'near "' + str + '"'
 }
 
-module.exports = { context: context };
+function parseTimestamp(token) {
+  var date = new Date
+  var year = token[2]
+    , month = token[3]
+    , day = token[4]
+    , hour = token[5] || 0
+    , min = token[6] || 0
+    , sec = token[7] || 0
+
+  date.setUTCFullYear(year, month-1, day)
+  date.setUTCHours(hour)
+  date.setUTCMinutes(min)
+  date.setUTCSeconds(sec)
+  date.setUTCMilliseconds(0)
+
+  return date;
+}
+
+
+module.exports = {
+  context: context,
+  parseTimestamp: parseTimestamp
+};
