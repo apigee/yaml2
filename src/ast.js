@@ -118,7 +118,7 @@ AST.prototype.parseHash = function() {
   // Add start and end to the hash based on start of the first key
   // and end of the last key
   hash.start = hash.keys[0].start;
-  hash.end = hash.keys[hash.keys.length - 1].end;
+  hash.end = hash.keys[hash.keys.length - 1].value.end;
 
   return hash;
 }
@@ -150,7 +150,7 @@ AST.prototype.parseInlineHash = function() {
   // Add start and end to the hash based on start of the first key
   // and end of the last key
   hash.start = hash.keys[0].start;
-  hash.end = hash.keys[hash.keys.length - 1].end;
+  hash.end = hash.keys[hash.keys.length - 1].value.end;
 
   return hash;
 }
