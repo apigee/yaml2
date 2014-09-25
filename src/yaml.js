@@ -21,7 +21,7 @@ exports.version = '0.3.0';
  * @api public
  */
 
-exports.eval = function(str) {
+var eval = function(str) {
   return (new Parser(tokenize(str))).parse()
 }
 
@@ -32,6 +32,16 @@ exports.eval = function(str) {
  * @return {mixed}
  * @api public
  */
-exports.ast = function(str) {
+var ast = function(str) {
   return (new AST(tokenize(str), str)).parse()
 }
+
+if (typeof window !== 'undefined') {
+  window.yaml2 = window.yaml2 || {
+    eval: eval,
+    ast: ast
+  };
+}
+
+exports.eval = eval;
+exports.ast = ast;
