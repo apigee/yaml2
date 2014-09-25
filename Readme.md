@@ -1,5 +1,6 @@
 
 # YAML2
+<a href='https://travis-ci.org/apigee/yaml2'><img src='https://travis-ci.org/apigee/yaml2.svg'/></a>
 
 YAML2 is a fork of [JS-YAML](https://github.com/visionmedia/js-yaml) which adds functionality to get an abstract syntax tree out of a YAML string.
 
