@@ -1,0 +1,52 @@
+{
+  "value": {
+    "items": [
+      {
+        "raw": "lots of milk",
+        "value": "lots of milk",
+        "start": {
+          "row": 1,
+          "column": 5
+        },
+        "end": {
+          "row": 1,
+          "column": 16
+        }
+      },
+      {
+        "raw": "'cookies'",
+        "value": "'cookies'",
+        "start": {
+          "row": 2,
+          "column": 6
+        },
+        "end": {
+          "row": 3,
+          "column": 1
+        }
+      },
+      {
+        "raw": "'something'",
+        "value": "'something'",
+        "start": {
+          "row": 3,
+          "column": 7
+        },
+        "end": {
+          "row": 5,
+          "column": 2
+        }
+      }
+    ],
+    "start": 6,
+    "end": 37
+  },
+  "start": {
+    "row": 0,
+    "column": 0
+  },
+  "end": {
+    "row": 5,
+    "column": 3
+  }
+}

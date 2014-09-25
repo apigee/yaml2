@@ -1,0 +1,10 @@
+{
+    "title": "Some Title",
+    "falseme": "I can see this",
+    "what": false,
+    "say": true,
+    "good": true,
+    "bad": false,
+    "trueme": "found",
+    "hope": "to see this"
+}

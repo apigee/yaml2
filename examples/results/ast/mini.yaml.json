@@ -1,0 +1,35 @@
+{
+  "keys": [
+    {
+      "keyName": "me",
+      "start": {
+        "row": 0,
+        "column": 0
+      },
+      "end": {
+        "row": 0,
+        "column": 1
+      },
+      "value": {
+        "raw": "100",
+        "value": 100,
+        "start": {
+          "row": 0,
+          "column": 4
+        },
+        "end": {
+          "row": 0,
+          "column": 6
+        }
+      }
+    }
+  ],
+  "start": {
+    "row": 0,
+    "column": 0
+  },
+  "end": {
+    "row": 0,
+    "column": 6
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "test": "A test for null values",
+  "thisis": null,
+  "thistoo": null,
+  "notnull": true,
+  "tildeis": "~",
+  "capitalized": null,
+  "end": "test passed?"
+}

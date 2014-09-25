@@ -1,0 +1,619 @@
+{
+  "value": {
+    "keys": [
+      {
+        "keyName": "users",
+        "start": {
+          "row": 1,
+          "column": 3
+        },
+        "end": {
+          "row": 1,
+          "column": 7
+        },
+        "value": {
+          "keys": [
+            {
+              "keyName": "tj",
+              "start": {
+                "row": 2,
+                "column": 6
+              },
+              "end": {
+                "row": 2,
+                "column": 7
+              },
+              "value": {
+                "keys": [
+                  {
+                    "keyName": "name",
+                    "start": {
+                      "row": 3,
+                      "column": 9
+                    },
+                    "end": {
+                      "row": 3,
+                      "column": 12
+                    },
+                    "value": {
+                      "raw": "tj",
+                      "value": "tj",
+                      "start": {
+                        "row": 4,
+                        "column": 1
+                      },
+                      "end": {
+                        "row": 4,
+                        "column": 2
+                      }
+                    }
+                  },
+                  {
+                    "keyName": "age",
+                    "start": {
+                      "row": 4,
+                      "column": 10
+                    },
+                    "end": {
+                      "row": 4,
+                      "column": 12
+                    },
+                    "value": {
+                      "raw": "23",
+                      "value": 23,
+                      "start": {
+                        "row": 5,
+                        "column": 2
+                      },
+                      "end": {
+                        "row": 5,
+                        "column": 3
+                      }
+                    }
+                  },
+                  {
+                    "keyName": "email",
+                    "start": {
+                      "row": 5,
+                      "column": 11
+                    },
+                    "end": {
+                      "row": 5,
+                      "column": 15
+                    },
+                    "value": {
+                      "raw": "'tj@vision-media.ca'",
+                      "value": "'tj@vision-media.ca'",
+                      "start": {
+                        "row": 5,
+                        "column": 18
+                      },
+                      "end": {
+                        "row": 6,
+                        "column": 4
+                      }
+                    }
+                  }
+                ],
+                "start": {
+                  "row": 3,
+                  "column": 9
+                },
+                "end": {
+                  "row": 6,
+                  "column": 4
+                }
+              }
+            },
+            {
+              "keyName": "bob",
+              "start": {
+                "row": 7,
+                "column": 2
+              },
+              "end": {
+                "row": 7,
+                "column": 4
+              },
+              "value": {
+                "keys": [
+                  {
+                    "keyName": "name",
+                    "start": {
+                      "row": 7,
+                      "column": 13
+                    },
+                    "end": {
+                      "row": 7,
+                      "column": 16
+                    },
+                    "value": {
+                      "raw": "'bob'",
+                      "value": "'bob'",
+                      "start": {
+                        "row": 8,
+                        "column": 2
+                      },
+                      "end": {
+                        "row": 8,
+                        "column": 6
+                      }
+                    }
+                  },
+                  {
+                    "keyName": "age",
+                    "start": {
+                      "row": 9,
+                      "column": 1
+                    },
+                    "end": {
+                      "row": 9,
+                      "column": 3
+                    },
+                    "value": {
+                      "raw": "27",
+                      "value": 27,
+                      "start": {
+                        "row": 9,
+                        "column": 6
+                      },
+                      "end": {
+                        "row": 9,
+                        "column": 7
+                      }
+                    }
+                  }
+                ],
+                "start": {
+                  "row": 7,
+                  "column": 13
+                },
+                "end": {
+                  "row": 9,
+                  "column": 7
+                }
+              }
+            },
+            {
+              "keyName": "ted",
+              "start": {
+                "row": 9,
+                "column": 13
+              },
+              "end": {
+                "row": 9,
+                "column": 15
+              },
+              "value": {
+                "keys": [
+                  {
+                    "keyName": "a",
+                    "start": {
+                      "row": 0,
+                      "column": "m"
+                    },
+                    "end": {
+                      "row": 0,
+                      "column": "e"
+                    },
+                    "value": {
+                      "raw": "ted",
+                      "value": "ted",
+                      "start": {
+                        "row": 9,
+                        "column": 26
+                      },
+                      "end": {
+                        "row": 9,
+                        "column": 28
+                      }
+                    }
+                  },
+                  {
+                    "keyName": "g",
+                    "start": {
+                      "row": 0,
+                      "column": "e"
+                    },
+                    "end": {
+                      "row": 0
+                    },
+                    "value": {
+                      "raw": "32",
+                      "value": 32,
+                      "start": {
+                        "row": 9,
+                        "column": 36
+                      },
+                      "end": {
+                        "row": 9,
+                        "column": 37
+                      }
+                    }
+                  },
+                  {
+                    "keyName": "m",
+                    "start": {
+                      "row": 0,
+                      "column": "a"
+                    },
+                    "end": {
+                      "row": 0,
+                      "column": "i"
+                    },
+                    "value": {
+                      "raw": "ted@tedtalks.com ",
+                      "value": "ted@tedtalks.com ",
+                      "start": {
+                        "row": 9,
+                        "column": 47
+                      },
+                      "end": {
+                        "row": 10,
+                        "column": 7
+                      }
+                    }
+                  }
+                ],
+                "start": {
+                  "row": 0,
+                  "column": "m"
+                },
+                "end": {
+                  "row": 10,
+                  "column": 7
+                }
+              }
+            }
+          ],
+          "start": {
+            "row": 2,
+            "column": 6
+          },
+          "end": {
+            "row": 10,
+            "column": 7
+          }
+        }
+      },
+      {
+        "keyName": "country",
+        "start": {
+          "row": 11,
+          "column": 2
+        },
+        "end": {
+          "row": 11,
+          "column": 8
+        },
+        "value": {
+          "keys": [
+            {
+              "keyName": "name",
+              "start": {
+                "row": 11,
+                "column": 15
+              },
+              "end": {
+                "row": 11,
+                "column": 18
+              },
+              "value": {
+                "raw": "Österreich",
+                "value": "Österreich",
+                "start": {
+                  "row": 12,
+                  "column": 1
+                },
+                "end": {
+                  "row": 12,
+                  "column": 10
+                }
+              }
+            },
+            {
+              "keyName": "website",
+              "start": {
+                "row": 12,
+                "column": 16
+              },
+              "end": {
+                "row": 12,
+                "column": 22
+              },
+              "value": {
+                "raw": "http://en.wikipedia.org/wiki/Austria",
+                "value": "http://en.wikipedia.org/wiki/Austria",
+                "start": {
+                  "row": 12,
+                  "column": 25
+                },
+                "end": {
+                  "row": 14,
+                  "column": 3
+                }
+              }
+            }
+          ],
+          "start": {
+            "row": 11,
+            "column": 15
+          },
+          "end": {
+            "row": 14,
+            "column": 3
+          }
+        }
+      },
+      {
+        "keyName": "space",
+        "start": {
+          "row": 14,
+          "column": 7
+        },
+        "end": {
+          "row": 14,
+          "column": 11
+        },
+        "value": {
+          "keys": [
+            {
+              "keyName": "description",
+              "start": {
+                "row": 14,
+                "column": 18
+              },
+              "end": {
+                "row": 14,
+                "column": 28
+              },
+              "value": {
+                "raw": "space, the final frontier",
+                "value": "space, the final frontier",
+                "start": {
+                  "row": 14,
+                  "column": 31
+                },
+                "end": {
+                  "row": 16,
+                  "column": 5
+                }
+              }
+            }
+          ],
+          "start": {
+            "row": 14,
+            "column": 18
+          },
+          "end": {
+            "row": 16,
+            "column": 5
+          }
+        }
+      },
+      {
+        "keyName": "/path",
+        "start": {
+          "row": 16,
+          "column": 9
+        },
+        "end": {
+          "row": 16,
+          "column": 13
+        },
+        "value": {
+          "keys": [
+            {
+              "keyName": "description",
+              "start": {
+                "row": 16,
+                "column": 20
+              },
+              "end": {
+                "row": 16,
+                "column": 30
+              },
+              "value": {
+                "raw": "this is a path",
+                "value": "this is a path",
+                "start": {
+                  "row": 17,
+                  "column": 2
+                },
+                "end": {
+                  "row": 18,
+                  "column": 8
+                }
+              }
+            }
+          ],
+          "start": {
+            "row": 16,
+            "column": 20
+          },
+          "end": {
+            "row": 18,
+            "column": 8
+          }
+        }
+      },
+      {
+        "keyName": "$ref",
+        "start": {
+          "row": 18,
+          "column": 12
+        },
+        "end": {
+          "row": 18,
+          "column": 15
+        },
+        "value": {
+          "keys": [
+            {
+              "keyName": "description",
+              "start": {
+                "row": 18,
+                "column": 22
+              },
+              "end": {
+                "row": 18,
+                "column": 32
+              },
+              "value": {
+                "raw": "this is a JSON Schema $ref",
+                "value": "this is a JSON Schema $ref",
+                "start": {
+                  "row": 18,
+                  "column": 35
+                },
+                "end": {
+                  "row": 20,
+                  "column": 6
+                }
+              }
+            }
+          ],
+          "start": {
+            "row": 18,
+            "column": 22
+          },
+          "end": {
+            "row": 20,
+            "column": 6
+          }
+        }
+      },
+      {
+        "keyName": "brackets",
+        "start": {
+          "row": 20,
+          "column": 10
+        },
+        "end": {
+          "row": 20,
+          "column": 17
+        },
+        "value": {
+          "keys": [
+            {
+              "keyName": "square",
+              "start": {
+                "row": 20,
+                "column": 24
+              },
+              "end": {
+                "row": 20,
+                "column": 29
+              },
+              "value": {
+                "raw": "Square [brackets] can go in the middle of strings",
+                "value": "Square [brackets] can go in the middle of strings",
+                "start": {
+                  "row": 20,
+                  "column": 32
+                },
+                "end": {
+                  "row": 21,
+                  "column": 19
+                }
+              }
+            },
+            {
+              "keyName": "squiggle",
+              "start": {
+                "row": 21,
+                "column": 25
+              },
+              "end": {
+                "row": 21,
+                "column": 32
+              },
+              "value": {
+                "raw": "Squiggle {brackets} can also go in the middle of strings!",
+                "value": "Squiggle {brackets} can also go in the middle of strings!",
+                "start": {
+                  "row": 21,
+                  "column": 35
+                },
+                "end": {
+                  "row": 22,
+                  "column": 20
+                }
+              }
+            },
+            {
+              "keyName": "extrasquare",
+              "start": {
+                "row": 22,
+                "column": 26
+              },
+              "end": {
+                "row": 22,
+                "column": 36
+              },
+              "value": {
+                "raw": "[Scratch that] brackets can go at the beginning as long as they close and have text after.",
+                "value": "[Scratch that] brackets can go at the beginning as long as they close and have text after.",
+                "start": {
+                  "row": 22,
+                  "column": 39
+                },
+                "end": {
+                  "row": 23,
+                  "column": 21
+                }
+              }
+            },
+            {
+              "keyName": "extrasquiggle",
+              "start": {
+                "row": 23,
+                "column": 27
+              },
+              "end": {
+                "row": 23,
+                "column": 39
+              },
+              "value": {
+                "raw": "{Scratch that} squigs can go at the beginning also!",
+                "value": "{Scratch that} squigs can go at the beginning also!",
+                "start": {
+                  "row": 23,
+                  "column": 42
+                },
+                "end": {
+                  "row": 25,
+                  "column": 22
+                }
+              }
+            }
+          ],
+          "start": {
+            "row": 20,
+            "column": 24
+          },
+          "end": {
+            "row": 25,
+            "column": 22
+          }
+        }
+      }
+    ],
+    "start": {
+      "row": 1,
+      "column": 3
+    },
+    "end": {
+      "row": 25,
+      "column": 22
+    }
+  },
+  "start": {
+    "row": 0,
+    "column": 0
+  },
+  "end": {
+    "row": 25,
+    "column": 23
+  }
+}

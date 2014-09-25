@@ -1,0 +1,35 @@
+{
+  "keys": [
+    {
+      "keyName": "for",
+      "start": {
+        "row": 0,
+        "column": 0
+      },
+      "end": {
+        "row": 0,
+        "column": 2
+      },
+      "value": {
+        "raw": "now",
+        "value": "now",
+        "start": {
+          "row": 0,
+          "column": 5
+        },
+        "end": {
+          "row": 0,
+          "column": 7
+        }
+      }
+    }
+  ],
+  "start": {
+    "row": 0,
+    "column": 0
+  },
+  "end": {
+    "row": 0,
+    "column": 7
+  }
+}
