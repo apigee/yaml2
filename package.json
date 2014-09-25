@@ -9,7 +9,8 @@
   "main": "./lib/yaml.js",
   "scripts": {
     "test": "node examples/run",
-    "lib": "./node_modules/browserify/bin/cmd.js src/yaml.js -o lib/browser.js"
+    "lib": "./node_modules/browserify/bin/cmd.js src/yaml.js -o lib/browser.js",
+    "ship": "sh ship.sh"
   },
   "devDependencies": {
     "browserify": "^5.12.0"
