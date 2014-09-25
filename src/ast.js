@@ -157,46 +157,55 @@ AST.prototype.parseInlineHash = function() {
 
 AST.prototype.parseList = function() {
   var list = new YAMLList();
+  var begining, end;
 
-  while (this.accept('-')) {
+  begining = this.accept('-');
+  while (true) {
     this.ignoreSpace();
 
     if (this.accept('indent')) {
-      list.items(this.parse());
+      list.items.push(this.parse());
       this.expect('dedent', 'list item not properly dedented');
     } else{
       list.items.push(this.parse());
     }
 
     this.ignoreSpace();
+
+    end = this.accept('-');
+
+    if (end){
+      // Keep a copy of last end to use it for list.end
+      endBuffer = end;
+    } else {
+      end = endBuffer;
+      break;
+    }
   }
 
-  // Add start and end to the list based on start of the first item
-  // and end of the last item
-  list.start = list.items[0].start;
-  list.end = list.items[list.items.length - 1].end;
+  list.start = begining[2];
+  list.end = end[3];
 
   return list;
 }
 
 AST.prototype.parseInlineList = function() {
   var list = new YAMLList(), i = 0;
+  var begining = this.accept('[');
+  var end = this.accept(']');
 
-  this.accept('[');
-
-  while (!this.accept(']')) {
+  while (!end) {
     this.ignoreSpace();
     if (i) this.expect(',', 'expected comma');
     this.ignoreSpace();
     list.items.push(this.parse());
     this.ignoreSpace();
     ++i;
+    end = this.accept(']');
   }
 
-  // Add start and end to the list based on start of the first item
-  // and end of the last item
-  list.start = list.items[0].start;
-  list.end = list.items[list.items.length - 1].end;
+  list.start = begining[2];
+  list.end = end[3];
 
   return list
 }
