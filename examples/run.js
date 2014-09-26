@@ -23,6 +23,7 @@ function run(filePath){
     fileContents = fileContents.toString();
     console.log(fileContents);
     var parsed = yaml.eval(fileContents);
+    console.log('parsed\n', parsed);
     console.assert(parsed, fs.readFileSync('./examples/results/parsed/' + fileName + '.json').toString() ===
       JSON.stringify(parsed, null, 2), 'did not pass!');
     var asted = yaml.ast(fileContents);

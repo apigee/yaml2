@@ -2,7 +2,7 @@
 // Copyright TJ Holowaychuk <tj@vision-media.ca> (MIT Licensed)
 // Copyright Mohsen Azimi <mohsen@mohsenweb.com> (MIT Licensed)
 
-var Parser = require('./parser');
+var assemble = require('./assembler');
 var AST = require('./ast');
 var tokenize = require('./lexer').tokenize;
 
@@ -22,7 +22,7 @@ exports.version = '0.3.0';
  */
 
 var eval = function(str) {
-  return (new Parser(tokenize(str))).parse()
+  return assemble(exports.ast(str));
 }
 
 /**

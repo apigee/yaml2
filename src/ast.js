@@ -1,4 +1,3 @@
-var Parser = require('./parser');
 var helpers = require('./helpers');
 
 // --- AST
@@ -16,8 +15,96 @@ function AST(tokens, str) {
   this.strLength = str.length;
 }
 
-// Inherits from Parser
-AST.prototype = new Parser();
+/**
+ * Look-ahead a single token.
+ *
+ * @return {array}
+ * @api public
+ */
+
+AST.prototype.peek = function() {
+  return this.tokens[0]
+}
+
+/**
+ * Advance by a single token.
+ *
+ * @return {array}
+ * @api public
+ */
+
+AST.prototype.advance = function() {
+  return this.tokens.shift()
+}
+
+/**
+ * Advance and return the token's value.
+ *
+ * @return {mixed}
+ * @api private
+ */
+
+AST.prototype.advanceValue = function() {
+  return this.advance()[1][1]
+}
+
+/**
+ * Accept _type_ and advance or do nothing.
+ *
+ * @param  {string} type
+ * @return {bool}
+ * @api private
+ */
+
+AST.prototype.accept = function(type) {
+  if (this.peekType(type))
+    return this.advance()
+}
+
+/**
+ * Expect _type_ or throw an error _msg_.
+ *
+ * @param  {string} type
+ * @param  {string} msg
+ * @api private
+ */
+
+AST.prototype.expect = function(type, msg) {
+  if (this.accept(type)) return
+  throw new Error(msg + ', ' + helpers.context(this.peek()[1].input))
+}
+
+/**
+ * Return the next token type.
+ *
+ * @return {string}
+ * @api private
+ */
+
+AST.prototype.peekType = function(val) {
+  return this.tokens[0] &&
+         this.tokens[0][0] === val
+}
+
+/**
+ * space*
+ */
+
+AST.prototype.ignoreSpace = function() {
+  while (this.peekType('space'))
+    this.advance()
+}
+
+/**
+ * (space | indent | dedent)*
+ */
+
+AST.prototype.ignoreWhitespace = function() {
+  while (this.peekType('space') ||
+         this.peekType('indent') ||
+         this.peekType('dedent'))
+    this.advance()
+}
 
 // constructor functions
 function YAMLDoc() {}
