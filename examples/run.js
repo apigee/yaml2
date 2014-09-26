@@ -26,7 +26,7 @@ function run(filePath){
     console.assert(parsed, fs.readFileSync('./examples/results/parsed/' + fileName + '.json').toString() ===
       JSON.stringify(parsed, null, 2), 'did not pass!');
     var asted = yaml.ast(fileContents);
-    console.assert(parsed, fs.readFileSync('./examples/results/parsed/' + fileName + '.json').toString() ===
+    console.assert(asted, fs.readFileSync('./examples/results/parsed/' + fileName + '.json').toString() ===
       JSON.stringify(asted, null, 2), 'did not pass!');
     console.log('passed\n'.green);
   });
