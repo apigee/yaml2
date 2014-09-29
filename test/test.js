@@ -9,7 +9,7 @@ require('chai').should();
   'comment',
   'config',
   'dates',
-  'hash',
+  // 'hash',
   'list.nested',
   'list',
   'mini',
@@ -24,15 +24,19 @@ require('chai').should();
         'results/ast/'+fileName+'.yaml.json') );
       ast = ast.toString();
       ast = JSON.parse(ast);
-      yaml.ast(y).should.deep.equal(ast);
+
+      var result = yaml.ast(y);
+      result.should.deep.equal(ast);
     });
 
     it('should output correct parsed value', function () {
       var parsed = fs.readFileSync( path.join(__dirname,
-        'results/ast/'+fileName+'.yaml.json') );
+        'results/parsed/'+fileName+'.yaml.json') );
       parsed = parsed.toString();
       parsed = JSON.parse(parsed);
-      yaml.ast(y).should.deep.equal(parsed);;
+
+      var result = yaml.eval(y);
+      result.should.deep.equal(parsed);;
     });
   });
 });
