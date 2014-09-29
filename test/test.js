@@ -9,9 +9,9 @@ require('chai').should();
   'comment',
   'config',
   'dates',
-  // 'hash',
-  'list.nested',
+  'hash',
   'list',
+  'list.nested',
   'mini',
   'null'
 ].forEach(function (fileName){
