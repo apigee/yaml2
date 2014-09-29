@@ -15,7 +15,7 @@
       },
       {
         "raw": "'cookies'",
-        "value": "'cookies'",
+        "value": "cookies",
         "start": {
           "row": 2,
           "column": 6
@@ -27,7 +27,7 @@
       },
       {
         "raw": "'something'",
-        "value": "'something'",
+        "value": "something",
         "start": {
           "row": 3,
           "column": 7
