@@ -132,9 +132,13 @@ function YAMLString(token) {
   this.raw = token[1][0];
   this.value = token[1][0];
 }
-function YAMLBoolean(token) {
+function YAMLTrue(token) {
   this.raw = token[1][0];
-  this.value = token[1][0];
+  this.value = true
+}
+function YAMLFalse(token) {
+  this.raw = token[1][0];
+  this.value = false;
 }
 function YAMLNull(token) {
   this.raw = token[1][0];
@@ -166,8 +170,9 @@ AST.prototype.parse = function() {
     case 'int':
       return this.parseValue(YAMLInt);
     case 'true':
+      return this.parseValue(YAMLTrue);
     case 'false':
-      return this.parseValue(YAMLBoolean);
+      return this.parseValue(YAMLFalse);
     case 'null':
       return this.parseValue(YAMLNull);
   }
