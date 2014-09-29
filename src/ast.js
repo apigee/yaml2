@@ -234,7 +234,7 @@ AST.prototype.parseInlineHash = function() {
     }
     this.ignoreWhitespace();
 
-    if (this.peekType('id') && (id = this.advanceValue())) {
+    if (this.peekType('id') && (id = this.advance())) {
       var hashKey = new YAMLHashKey(id);
       this.assignStartEnd(hashKey, id);
       this.expect(':', 'expected semi-colon after id');
