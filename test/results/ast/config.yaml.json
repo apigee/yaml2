@@ -13,7 +13,7 @@
         },
         "value": {
           "raw": "'/home/www/pids/thin.pid'",
-          "value": "'/home/www/pids/thin.pid'",
+          "value": "/home/www/pids/thin.pid",
           "start": {
             "row": 1,
             "column": 8
@@ -144,7 +144,7 @@
         },
         "value": {
           "raw": "false",
-          "value": "false",
+          "value": false,
           "start": {
             "row": 9,
             "column": 2

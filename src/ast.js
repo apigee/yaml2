@@ -129,8 +129,15 @@ function YAMLFloat(token) {
   this.value = parseFloat(token[1][0]);
 }
 function YAMLString(token) {
-  this.raw = token[1][0];
-  this.value = token[1][0];
+  var raw = token[1][0];
+  this.raw = raw;
+
+  if (raw[0] === raw[raw.length - 1] && (raw[0] === '"' || raw[0] === '\'')){
+    // Remove quotation marks
+    this.value = raw.substring(1, raw.length - 1);
+  } else {
+    this.value = token[1][0];
+  }
 }
 function YAMLTrue(token) {
   this.raw = token[1][0];
