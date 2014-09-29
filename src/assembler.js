@@ -10,6 +10,9 @@ function assemble(ast) {
   }
 
   switch (ast.constructor.name){
+    case 'String':
+      result = ast;
+      break;
     case 'YAMLDoc':
       result = assemble(ast.value);
       break;
