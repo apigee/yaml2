@@ -26,6 +26,7 @@ require('chai').should();
       ast = JSON.parse(ast);
 
       var result = yaml.ast(y);
+      result = JSON.parse(JSON.stringify(result));
       result.should.deep.equal(ast);
     });
 
@@ -36,6 +37,7 @@ require('chai').should();
       parsed = JSON.parse(parsed);
 
       var result = yaml.eval(y);
+      result = JSON.parse(JSON.stringify(result));
       result.should.deep.equal(parsed);;
     });
   });
