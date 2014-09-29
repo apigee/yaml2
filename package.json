@@ -8,12 +8,14 @@
   ],
   "main": "./lib/yaml.js",
   "scripts": {
-    "test": "node examples/run",
+    "test": "./node_modules/mocha/bin/mocha",
     "lib": "./node_modules/browserify/bin/cmd.js src/yaml.js -o lib/browser.js",
     "ship": "sh ship.sh"
   },
   "devDependencies": {
     "browserify": "^5.12.0",
-    "colors": "^0.6.2"
+    "chai": "^1.9.1",
+    "colors": "^0.6.2",
+    "mocha": "^1.21.4"
   }
 }
