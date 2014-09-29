@@ -25,7 +25,7 @@ function assemble(ast) {
     case 'YAMLList':
       result = [];
       ast.items.forEach(function (item){
-        result.push(assemble(item.value));
+        result.push(assemble(item));
       });
       break;
     default:
