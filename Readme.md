@@ -11,9 +11,9 @@ fork the project and submit a patch :)
 # Usage
 
 
-#### Get JavaScript object off YAML string
+#### Get JavaScript object out of a YAML string
     require('yaml2').eval(string_of_yaml)
-#### Get Abstract Syntax Tree(AST) off a YAML string
+#### Get Abstract Syntax Tree(AST) out of a YAML string
     require('yaml2').ast(string_of_yaml)
     
 # Currently Supports
@@ -41,6 +41,10 @@ fork the project and submit a patch :)
 Run:
 
     $ npm test
+
+# Known Bugs
+
+  * Inline hash with key quoted: `hash: {"me": 1}`
 
 # License 
 
