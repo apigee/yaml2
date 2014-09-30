@@ -8,11 +8,11 @@
         "keyName": "pid",
         "start": {
           "row": 1,
-          "column": 3
+          "column": 2
         },
         "end": {
           "row": 1,
-          "column": 5
+          "column": 4
         },
         "value": {
           "raw": "'/home/www/pids/thin.pid'",
@@ -20,11 +20,11 @@
           "value": "/home/www/pids/thin.pid",
           "start": {
             "row": 1,
-            "column": 8
+            "column": 7
           },
           "end": {
             "row": 1,
-            "column": 32
+            "column": 31
           }
         }
       },
@@ -33,11 +33,11 @@
         "keyName": "wait",
         "start": {
           "row": 2,
-          "column": 4
+          "column": 2
         },
         "end": {
           "row": 2,
-          "column": 7
+          "column": 5
         },
         "value": {
           "node": "YAMLInt",
@@ -45,11 +45,11 @@
           "value": 30,
           "start": {
             "row": 2,
-            "column": 10
+            "column": 8
           },
           "end": {
-            "row": 3,
-            "column": 1
+            "row": 2,
+            "column": 9
           }
         }
       },
@@ -58,11 +58,11 @@
         "keyName": "port",
         "start": {
           "row": 3,
-          "column": 5
+          "column": 2
         },
         "end": {
           "row": 3,
-          "column": 8
+          "column": 5
         },
         "value": {
           "node": "YAMLInt",
@@ -70,11 +70,11 @@
           "value": 3000,
           "start": {
             "row": 3,
-            "column": 11
+            "column": 8
           },
           "end": {
-            "row": 4,
-            "column": 2
+            "row": 3,
+            "column": 11
           }
         }
       },
@@ -83,23 +83,23 @@
         "keyName": "timeout",
         "start": {
           "row": 4,
-          "column": 6
+          "column": 2
         },
         "end": {
           "row": 4,
-          "column": 12
+          "column": 8
         },
         "value": {
           "node": "YAMLInt",
           "raw": "15",
           "value": 15,
           "start": {
-            "row": 5,
-            "column": 2
+            "row": 4,
+            "column": 11
           },
           "end": {
-            "row": 5,
-            "column": 3
+            "row": 4,
+            "column": 12
           }
         }
       },
@@ -108,23 +108,23 @@
         "keyName": "servers",
         "start": {
           "row": 5,
-          "column": 7
+          "column": 2
         },
         "end": {
-          "row": 6,
-          "column": 1
+          "row": 5,
+          "column": 8
         },
         "value": {
           "node": "YAMLInt",
           "raw": "2",
           "value": 2,
           "start": {
-            "row": 6,
-            "column": 4
+            "row": 5,
+            "column": 11
           },
           "end": {
-            "row": 6,
-            "column": 4
+            "row": 5,
+            "column": 11
           }
         }
       },
@@ -133,11 +133,11 @@
         "keyName": "require",
         "start": {
           "row": 6,
-          "column": 8
+          "column": 2
         },
         "end": {
-          "row": 7,
-          "column": 1
+          "row": 6,
+          "column": 8
         },
         "value": {
           "node": "YAMLList",
@@ -151,34 +151,34 @@
         "keyName": "dbg-mode",
         "start": {
           "row": 7,
-          "column": 9
+          "column": 2
         },
         "end": {
           "row": 7,
-          "column": 16
+          "column": 9
         },
         "value": {
           "node": "YAMLFalse",
           "raw": "false",
           "value": false,
           "start": {
-            "row": 9,
-            "column": 2
+            "row": 7,
+            "column": 12
           },
           "end": {
-            "row": 9,
-            "column": 6
+            "row": 7,
+            "column": 16
           }
         }
       }
     ],
     "start": {
       "row": 1,
-      "column": 3
+      "column": 2
     },
     "end": {
-      "row": 9,
-      "column": 6
+      "row": 7,
+      "column": 16
     }
   },
   "start": {
@@ -186,7 +186,7 @@
     "column": 0
   },
   "end": {
-    "row": 9,
-    "column": 7
+    "row": 7,
+    "column": 17
   }
 }

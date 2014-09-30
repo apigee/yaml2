@@ -11,7 +11,9 @@ function AST(tokens, str) {
 
   // Windows new line support (CR+LF, \r\n)
   str = str.replace(/\r\n/g, '\n');
-  this.lines = str.split('\n');
+
+  // Use a regex to do this magic
+  this.lines = str.split(/\n/g).map(function(i){ return i + '\n'});
   this.strLength = str.length;
 }
 
@@ -336,7 +338,7 @@ AST.prototype.indexToRowCol = function (index) {
   if (!this.lines) return null;
 
   for (var l = 0; l < this.lines.length; l++) {
-    if (index > this.lines[l].length){
+    if (index >= this.lines[l].length){
       index -= this.lines[l].length;
     } else {
       break;

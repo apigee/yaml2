@@ -8,11 +8,11 @@
         "keyName": "users",
         "start": {
           "row": 1,
-          "column": 3
+          "column": 2
         },
         "end": {
           "row": 1,
-          "column": 7
+          "column": 6
         },
         "value": {
           "node": "YAMLHash",
@@ -22,11 +22,11 @@
               "keyName": "tj",
               "start": {
                 "row": 2,
-                "column": 6
+                "column": 4
               },
               "end": {
                 "row": 2,
-                "column": 7
+                "column": 5
               },
               "value": {
                 "node": "YAMLHash",
@@ -36,23 +36,23 @@
                     "keyName": "name",
                     "start": {
                       "row": 3,
-                      "column": 9
+                      "column": 6
                     },
                     "end": {
                       "row": 3,
-                      "column": 12
+                      "column": 9
                     },
                     "value": {
                       "raw": "tj",
                       "node": "YAMLString",
                       "value": "tj",
                       "start": {
-                        "row": 4,
-                        "column": 1
+                        "row": 3,
+                        "column": 12
                       },
                       "end": {
-                        "row": 4,
-                        "column": 2
+                        "row": 3,
+                        "column": 13
                       }
                     }
                   },
@@ -61,23 +61,23 @@
                     "keyName": "age",
                     "start": {
                       "row": 4,
-                      "column": 10
+                      "column": 6
                     },
                     "end": {
                       "row": 4,
-                      "column": 12
+                      "column": 8
                     },
                     "value": {
                       "node": "YAMLInt",
                       "raw": "23",
                       "value": 23,
                       "start": {
-                        "row": 5,
-                        "column": 2
+                        "row": 4,
+                        "column": 11
                       },
                       "end": {
-                        "row": 5,
-                        "column": 3
+                        "row": 4,
+                        "column": 12
                       }
                     }
                   },
@@ -86,11 +86,11 @@
                     "keyName": "email",
                     "start": {
                       "row": 5,
-                      "column": 11
+                      "column": 6
                     },
                     "end": {
                       "row": 5,
-                      "column": 15
+                      "column": 10
                     },
                     "value": {
                       "raw": "'tj@vision-media.ca'",
@@ -98,22 +98,22 @@
                       "value": "tj@vision-media.ca",
                       "start": {
                         "row": 5,
-                        "column": 18
+                        "column": 13
                       },
                       "end": {
-                        "row": 6,
-                        "column": 4
+                        "row": 5,
+                        "column": 32
                       }
                     }
                   }
                 ],
                 "start": {
                   "row": 3,
-                  "column": 9
+                  "column": 6
                 },
                 "end": {
-                  "row": 6,
-                  "column": 4
+                  "row": 5,
+                  "column": 32
                 }
               }
             },
@@ -121,12 +121,12 @@
               "node": "YAMLHashKey",
               "keyName": "bob",
               "start": {
-                "row": 7,
-                "column": 2
+                "row": 6,
+                "column": 4
               },
               "end": {
-                "row": 7,
-                "column": 4
+                "row": 6,
+                "column": 6
               },
               "value": {
                 "node": "YAMLHash",
@@ -136,23 +136,23 @@
                     "keyName": "name",
                     "start": {
                       "row": 7,
-                      "column": 13
+                      "column": 6
                     },
                     "end": {
                       "row": 7,
-                      "column": 16
+                      "column": 9
                     },
                     "value": {
                       "raw": "'bob'",
                       "node": "YAMLString",
                       "value": "bob",
                       "start": {
-                        "row": 8,
-                        "column": 2
+                        "row": 7,
+                        "column": 12
                       },
                       "end": {
-                        "row": 8,
-                        "column": 6
+                        "row": 7,
+                        "column": 16
                       }
                     }
                   },
@@ -160,35 +160,35 @@
                     "node": "YAMLHashKey",
                     "keyName": "age",
                     "start": {
-                      "row": 9,
-                      "column": 1
+                      "row": 8,
+                      "column": 6
                     },
                     "end": {
-                      "row": 9,
-                      "column": 3
+                      "row": 8,
+                      "column": 8
                     },
                     "value": {
                       "node": "YAMLInt",
                       "raw": "27",
                       "value": 27,
                       "start": {
-                        "row": 9,
-                        "column": 6
+                        "row": 8,
+                        "column": 11
                       },
                       "end": {
-                        "row": 9,
-                        "column": 7
+                        "row": 8,
+                        "column": 12
                       }
                     }
                   }
                 ],
                 "start": {
                   "row": 7,
-                  "column": 13
+                  "column": 6
                 },
                 "end": {
-                  "row": 9,
-                  "column": 7
+                  "row": 8,
+                  "column": 12
                 }
               }
             },
@@ -197,11 +197,11 @@
               "keyName": "ted",
               "start": {
                 "row": 9,
-                "column": 13
+                "column": 4
               },
               "end": {
                 "row": 9,
-                "column": 15
+                "column": 6
               },
               "value": {
                 "node": "YAMLHash",
@@ -211,11 +211,11 @@
                     "keyName": "name",
                     "start": {
                       "row": 9,
-                      "column": 20
+                      "column": 11
                     },
                     "end": {
                       "row": 9,
-                      "column": 23
+                      "column": 14
                     },
                     "value": {
                       "raw": "ted",
@@ -223,7 +223,32 @@
                       "value": "ted",
                       "start": {
                         "row": 9,
-                        "column": 26
+                        "column": 17
+                      },
+                      "end": {
+                        "row": 9,
+                        "column": 19
+                      }
+                    }
+                  },
+                  {
+                    "node": "YAMLHashKey",
+                    "keyName": "age",
+                    "start": {
+                      "row": 9,
+                      "column": 22
+                    },
+                    "end": {
+                      "row": 9,
+                      "column": 24
+                    },
+                    "value": {
+                      "node": "YAMLInt",
+                      "raw": "32",
+                      "value": 32,
+                      "start": {
+                        "row": 9,
+                        "column": 27
                       },
                       "end": {
                         "row": 9,
@@ -233,39 +258,14 @@
                   },
                   {
                     "node": "YAMLHashKey",
-                    "keyName": "age",
+                    "keyName": "email",
                     "start": {
                       "row": 9,
                       "column": 31
                     },
                     "end": {
                       "row": 9,
-                      "column": 33
-                    },
-                    "value": {
-                      "node": "YAMLInt",
-                      "raw": "32",
-                      "value": 32,
-                      "start": {
-                        "row": 9,
-                        "column": 36
-                      },
-                      "end": {
-                        "row": 9,
-                        "column": 37
-                      }
-                    }
-                  },
-                  {
-                    "node": "YAMLHashKey",
-                    "keyName": "email",
-                    "start": {
-                      "row": 9,
-                      "column": 40
-                    },
-                    "end": {
-                      "row": 9,
-                      "column": 44
+                      "column": 35
                     },
                     "value": {
                       "raw": "ted@tedtalks.com ",
@@ -273,33 +273,33 @@
                       "value": "ted@tedtalks.com ",
                       "start": {
                         "row": 9,
-                        "column": 47
+                        "column": 38
                       },
                       "end": {
-                        "row": 10,
-                        "column": 7
+                        "row": 9,
+                        "column": 54
                       }
                     }
                   }
                 ],
                 "start": {
                   "row": 9,
-                  "column": 20
+                  "column": 11
                 },
                 "end": {
-                  "row": 10,
-                  "column": 7
+                  "row": 9,
+                  "column": 54
                 }
               }
             }
           ],
           "start": {
             "row": 2,
-            "column": 6
+            "column": 4
           },
           "end": {
-            "row": 10,
-            "column": 7
+            "row": 9,
+            "column": 54
           }
         }
       },
@@ -307,11 +307,11 @@
         "node": "YAMLHashKey",
         "keyName": "country",
         "start": {
-          "row": 11,
+          "row": 10,
           "column": 2
         },
         "end": {
-          "row": 11,
+          "row": 10,
           "column": 8
         },
         "value": {
@@ -322,23 +322,23 @@
               "keyName": "name",
               "start": {
                 "row": 11,
-                "column": 15
+                "column": 4
               },
               "end": {
                 "row": 11,
-                "column": 18
+                "column": 7
               },
               "value": {
                 "raw": "Österreich",
                 "node": "YAMLString",
                 "value": "Österreich",
                 "start": {
-                  "row": 12,
-                  "column": 1
+                  "row": 11,
+                  "column": 10
                 },
                 "end": {
-                  "row": 12,
-                  "column": 10
+                  "row": 11,
+                  "column": 19
                 }
               }
             },
@@ -347,11 +347,11 @@
               "keyName": "website",
               "start": {
                 "row": 12,
-                "column": 16
+                "column": 4
               },
               "end": {
                 "row": 12,
-                "column": 22
+                "column": 10
               },
               "value": {
                 "raw": "http://en.wikipedia.org/wiki/Austria",
@@ -359,22 +359,22 @@
                 "value": "http://en.wikipedia.org/wiki/Austria",
                 "start": {
                   "row": 12,
-                  "column": 25
+                  "column": 13
                 },
                 "end": {
-                  "row": 14,
-                  "column": 3
+                  "row": 12,
+                  "column": 48
                 }
               }
             }
           ],
           "start": {
             "row": 11,
-            "column": 15
+            "column": 4
           },
           "end": {
-            "row": 14,
-            "column": 3
+            "row": 12,
+            "column": 48
           }
         }
       },
@@ -382,12 +382,12 @@
         "node": "YAMLHashKey",
         "keyName": "space",
         "start": {
-          "row": 14,
-          "column": 7
+          "row": 13,
+          "column": 2
         },
         "end": {
-          "row": 14,
-          "column": 11
+          "row": 13,
+          "column": 6
         },
         "value": {
           "node": "YAMLHash",
@@ -397,11 +397,11 @@
               "keyName": "description",
               "start": {
                 "row": 14,
-                "column": 18
+                "column": 4
               },
               "end": {
                 "row": 14,
-                "column": 28
+                "column": 14
               },
               "value": {
                 "raw": "space, the final frontier",
@@ -409,22 +409,22 @@
                 "value": "space, the final frontier",
                 "start": {
                   "row": 14,
-                  "column": 31
+                  "column": 17
                 },
                 "end": {
-                  "row": 16,
-                  "column": 5
+                  "row": 14,
+                  "column": 41
                 }
               }
             }
           ],
           "start": {
             "row": 14,
-            "column": 18
+            "column": 4
           },
           "end": {
-            "row": 16,
-            "column": 5
+            "row": 14,
+            "column": 41
           }
         }
       },
@@ -432,12 +432,12 @@
         "node": "YAMLHashKey",
         "keyName": "/path",
         "start": {
-          "row": 16,
-          "column": 9
+          "row": 15,
+          "column": 2
         },
         "end": {
-          "row": 16,
-          "column": 13
+          "row": 15,
+          "column": 6
         },
         "value": {
           "node": "YAMLHash",
@@ -447,34 +447,34 @@
               "keyName": "description",
               "start": {
                 "row": 16,
-                "column": 20
+                "column": 4
               },
               "end": {
                 "row": 16,
-                "column": 30
+                "column": 14
               },
               "value": {
                 "raw": "this is a path",
                 "node": "YAMLString",
                 "value": "this is a path",
                 "start": {
-                  "row": 17,
-                  "column": 2
+                  "row": 16,
+                  "column": 17
                 },
                 "end": {
-                  "row": 18,
-                  "column": 8
+                  "row": 16,
+                  "column": 30
                 }
               }
             }
           ],
           "start": {
             "row": 16,
-            "column": 20
+            "column": 4
           },
           "end": {
-            "row": 18,
-            "column": 8
+            "row": 16,
+            "column": 30
           }
         }
       },
@@ -482,12 +482,12 @@
         "node": "YAMLHashKey",
         "keyName": "$ref",
         "start": {
-          "row": 18,
-          "column": 12
+          "row": 17,
+          "column": 2
         },
         "end": {
-          "row": 18,
-          "column": 15
+          "row": 17,
+          "column": 5
         },
         "value": {
           "node": "YAMLHash",
@@ -497,11 +497,11 @@
               "keyName": "description",
               "start": {
                 "row": 18,
-                "column": 22
+                "column": 4
               },
               "end": {
                 "row": 18,
-                "column": 32
+                "column": 14
               },
               "value": {
                 "raw": "this is a JSON Schema $ref",
@@ -509,22 +509,22 @@
                 "value": "this is a JSON Schema $ref",
                 "start": {
                   "row": 18,
-                  "column": 35
+                  "column": 17
                 },
                 "end": {
-                  "row": 20,
-                  "column": 6
+                  "row": 18,
+                  "column": 42
                 }
               }
             }
           ],
           "start": {
             "row": 18,
-            "column": 22
+            "column": 4
           },
           "end": {
-            "row": 20,
-            "column": 6
+            "row": 18,
+            "column": 42
           }
         }
       },
@@ -532,12 +532,12 @@
         "node": "YAMLHashKey",
         "keyName": "brackets",
         "start": {
-          "row": 20,
-          "column": 10
+          "row": 19,
+          "column": 2
         },
         "end": {
-          "row": 20,
-          "column": 17
+          "row": 19,
+          "column": 9
         },
         "value": {
           "node": "YAMLHash",
@@ -547,11 +547,11 @@
               "keyName": "square",
               "start": {
                 "row": 20,
-                "column": 24
+                "column": 4
               },
               "end": {
                 "row": 20,
-                "column": 29
+                "column": 9
               },
               "value": {
                 "raw": "Square [brackets] can go in the middle of strings",
@@ -559,11 +559,11 @@
                 "value": "Square [brackets] can go in the middle of strings",
                 "start": {
                   "row": 20,
-                  "column": 32
+                  "column": 12
                 },
                 "end": {
-                  "row": 21,
-                  "column": 19
+                  "row": 20,
+                  "column": 60
                 }
               }
             },
@@ -572,11 +572,11 @@
               "keyName": "squiggle",
               "start": {
                 "row": 21,
-                "column": 25
+                "column": 4
               },
               "end": {
                 "row": 21,
-                "column": 32
+                "column": 11
               },
               "value": {
                 "raw": "Squiggle {brackets} can also go in the middle of strings!",
@@ -584,11 +584,11 @@
                 "value": "Squiggle {brackets} can also go in the middle of strings!",
                 "start": {
                   "row": 21,
-                  "column": 35
+                  "column": 14
                 },
                 "end": {
-                  "row": 22,
-                  "column": 20
+                  "row": 21,
+                  "column": 70
                 }
               }
             },
@@ -597,11 +597,11 @@
               "keyName": "extrasquare",
               "start": {
                 "row": 22,
-                "column": 26
+                "column": 4
               },
               "end": {
                 "row": 22,
-                "column": 36
+                "column": 14
               },
               "value": {
                 "raw": "[Scratch that] brackets can go at the beginning as long as they close and have text after.",
@@ -609,11 +609,11 @@
                 "value": "[Scratch that] brackets can go at the beginning as long as they close and have text after.",
                 "start": {
                   "row": 22,
-                  "column": 39
+                  "column": 17
                 },
                 "end": {
-                  "row": 23,
-                  "column": 21
+                  "row": 22,
+                  "column": 106
                 }
               }
             },
@@ -622,11 +622,11 @@
               "keyName": "extrasquiggle",
               "start": {
                 "row": 23,
-                "column": 27
+                "column": 4
               },
               "end": {
                 "row": 23,
-                "column": 39
+                "column": 16
               },
               "value": {
                 "raw": "{Scratch that} squigs can go at the beginning also!",
@@ -634,33 +634,33 @@
                 "value": "{Scratch that} squigs can go at the beginning also!",
                 "start": {
                   "row": 23,
-                  "column": 42
+                  "column": 19
                 },
                 "end": {
-                  "row": 25,
-                  "column": 22
+                  "row": 23,
+                  "column": 69
                 }
               }
             }
           ],
           "start": {
             "row": 20,
-            "column": 24
+            "column": 4
           },
           "end": {
-            "row": 25,
-            "column": 22
+            "row": 23,
+            "column": 69
           }
         }
       }
     ],
     "start": {
       "row": 1,
-      "column": 3
+      "column": 2
     },
     "end": {
-      "row": 25,
-      "column": 22
+      "row": 23,
+      "column": 69
     }
   },
   "start": {
@@ -668,7 +668,7 @@
     "column": 0
   },
   "end": {
-    "row": 25,
-    "column": 23
+    "row": 23,
+    "column": 70
   }
 }

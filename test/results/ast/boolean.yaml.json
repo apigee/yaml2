@@ -8,11 +8,11 @@
         "keyName": "title",
         "start": {
           "row": 1,
-          "column": 3
+          "column": 2
         },
         "end": {
           "row": 1,
-          "column": 7
+          "column": 6
         },
         "value": {
           "raw": "Some Title",
@@ -20,11 +20,11 @@
           "value": "Some Title",
           "start": {
             "row": 1,
-            "column": 10
+            "column": 9
           },
           "end": {
             "row": 1,
-            "column": 19
+            "column": 18
           }
         }
       },
@@ -33,11 +33,11 @@
         "keyName": "falseme",
         "start": {
           "row": 2,
-          "column": 4
+          "column": 2
         },
         "end": {
           "row": 2,
-          "column": 10
+          "column": 8
         },
         "value": {
           "raw": "I can see this",
@@ -45,11 +45,11 @@
           "value": "I can see this",
           "start": {
             "row": 2,
-            "column": 13
+            "column": 11
           },
           "end": {
-            "row": 3,
-            "column": 1
+            "row": 2,
+            "column": 24
           }
         }
       },
@@ -58,23 +58,23 @@
         "keyName": "what",
         "start": {
           "row": 3,
-          "column": 5
+          "column": 2
         },
         "end": {
           "row": 3,
-          "column": 8
+          "column": 5
         },
         "value": {
           "node": "YAMLFalse",
           "raw": "no",
           "value": false,
           "start": {
-            "row": 4,
-            "column": 1
+            "row": 3,
+            "column": 8
           },
           "end": {
-            "row": 4,
-            "column": 2
+            "row": 3,
+            "column": 9
           }
         }
       },
@@ -83,23 +83,23 @@
         "keyName": "say",
         "start": {
           "row": 4,
-          "column": 6
+          "column": 2
         },
         "end": {
           "row": 4,
-          "column": 8
+          "column": 4
         },
         "value": {
           "node": "YAMLTrue",
           "raw": "yes",
           "value": true,
           "start": {
-            "row": 5,
-            "column": 1
+            "row": 4,
+            "column": 7
           },
           "end": {
-            "row": 5,
-            "column": 3
+            "row": 4,
+            "column": 9
           }
         }
       },
@@ -108,23 +108,23 @@
         "keyName": "good",
         "start": {
           "row": 5,
-          "column": 7
+          "column": 2
         },
         "end": {
           "row": 5,
-          "column": 10
+          "column": 5
         },
         "value": {
           "node": "YAMLTrue",
           "raw": "true",
           "value": true,
           "start": {
-            "row": 6,
-            "column": 1
+            "row": 5,
+            "column": 8
           },
           "end": {
-            "row": 6,
-            "column": 4
+            "row": 5,
+            "column": 11
           }
         }
       },
@@ -133,23 +133,23 @@
         "keyName": "bad",
         "start": {
           "row": 6,
-          "column": 8
+          "column": 2
         },
         "end": {
           "row": 6,
-          "column": 10
+          "column": 4
         },
         "value": {
           "node": "YAMLFalse",
           "raw": "false",
           "value": false,
           "start": {
-            "row": 7,
-            "column": 1
+            "row": 6,
+            "column": 7
           },
           "end": {
-            "row": 7,
-            "column": 5
+            "row": 6,
+            "column": 11
           }
         }
       },
@@ -158,23 +158,23 @@
         "keyName": "trueme",
         "start": {
           "row": 7,
-          "column": 9
+          "column": 2
         },
         "end": {
           "row": 7,
-          "column": 14
+          "column": 7
         },
         "value": {
           "raw": "found",
           "node": "YAMLString",
           "value": "found",
           "start": {
-            "row": 8,
-            "column": 2
+            "row": 7,
+            "column": 10
           },
           "end": {
-            "row": 8,
-            "column": 6
+            "row": 7,
+            "column": 14
           }
         }
       },
@@ -183,11 +183,11 @@
         "keyName": "hope",
         "start": {
           "row": 8,
-          "column": 10
+          "column": 2
         },
         "end": {
           "row": 8,
-          "column": 13
+          "column": 5
         },
         "value": {
           "raw": "to see this",
@@ -195,22 +195,22 @@
           "value": "to see this",
           "start": {
             "row": 8,
-            "column": 16
+            "column": 8
           },
           "end": {
-            "row": 10,
-            "column": 7
+            "row": 8,
+            "column": 18
           }
         }
       }
     ],
     "start": {
       "row": 1,
-      "column": 3
+      "column": 2
     },
     "end": {
-      "row": 10,
-      "column": 7
+      "row": 8,
+      "column": 18
     }
   },
   "start": {
@@ -218,7 +218,7 @@
     "column": 0
   },
   "end": {
-    "row": 10,
-    "column": 8
+    "row": 8,
+    "column": 19
   }
 }

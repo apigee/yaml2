@@ -56,26 +56,30 @@ exports.tokenize = function (str) {
         index += captures[0].length;
         switch (token[0]) {
           case 'comment':
-            ignore = true
-            break
+            ignore = true;
+            break;
           case 'indent':
-            lastIndents = indents
+            lastIndents = indents;
             // determine the indentation amount from the first indent
             if (indentAmount == -1) {
-              indentAmount = token[1][1].length
+              indentAmount = token[1][1].length;
             }
 
-            indents = token[1][1].length / indentAmount
-            if (indents === lastIndents)
-              ignore = true
-            else if (indents > lastIndents + 1)
-              throw new SyntaxError('invalid indentation, got ' + indents + ' instead of ' + (lastIndents + 1))
+            indents = token[1][1].length / indentAmount;
+
+            if (indents === lastIndents || isNaN(indents)) {
+              ignore = true;
+            }
+            else if (indents > lastIndents + 1){
+              throw new SyntaxError('invalid indentation, got ' + indents + ' instead of ' + (lastIndents + 1));
+            }
             else if (indents < lastIndents) {
-              input = token[1].input
-              token = ['dedent']
-              token.input = input
-              while (--lastIndents > indents)
+              input = token[1].input;
+              token = ['dedent'];
+              token.input = input;
+              while (--lastIndents > indents){
                 stack.push(token)
+              }
             }
         }
         break

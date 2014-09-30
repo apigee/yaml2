@@ -8,11 +8,11 @@
         "keyName": "date0",
         "start": {
           "row": 1,
-          "column": 3
+          "column": 2
         },
         "end": {
           "row": 1,
-          "column": 7
+          "column": 6
         },
         "value": {
           "node": "YAMLDate",
@@ -20,11 +20,11 @@
           "value": "2011-05-21T00:00:00.000Z",
           "start": {
             "row": 1,
-            "column": 10
+            "column": 9
           },
           "end": {
             "row": 1,
-            "column": 19
+            "column": 18
           }
         }
       },
@@ -33,11 +33,11 @@
         "keyName": "date1",
         "start": {
           "row": 2,
-          "column": 4
+          "column": 2
         },
         "end": {
           "row": 2,
-          "column": 8
+          "column": 6
         },
         "value": {
           "node": "YAMLDate",
@@ -45,11 +45,11 @@
           "value": "2011-05-21T00:00:00.000Z",
           "start": {
             "row": 2,
-            "column": 11
+            "column": 9
           },
           "end": {
-            "row": 3,
-            "column": 1
+            "row": 2,
+            "column": 17
           }
         }
       },
@@ -58,11 +58,11 @@
         "keyName": "date2",
         "start": {
           "row": 3,
-          "column": 5
+          "column": 2
         },
         "end": {
           "row": 3,
-          "column": 9
+          "column": 6
         },
         "value": {
           "node": "YAMLDate",
@@ -70,11 +70,11 @@
           "value": "2011-01-02T00:00:00.000Z",
           "start": {
             "row": 3,
-            "column": 12
+            "column": 9
           },
           "end": {
-            "row": 4,
-            "column": 2
+            "row": 3,
+            "column": 16
           }
         }
       },
@@ -83,11 +83,11 @@
         "keyName": "date3",
         "start": {
           "row": 4,
-          "column": 6
+          "column": 2
         },
         "end": {
           "row": 4,
-          "column": 10
+          "column": 6
         },
         "value": {
           "node": "YAMLDate",
@@ -95,11 +95,11 @@
           "value": "2011-02-21T17:56:00.000Z",
           "start": {
             "row": 4,
-            "column": 13
+            "column": 9
           },
           "end": {
-            "row": 5,
-            "column": 3
+            "row": 4,
+            "column": 24
           }
         }
       },
@@ -108,11 +108,11 @@
         "keyName": "date4",
         "start": {
           "row": 5,
-          "column": 7
+          "column": 2
         },
         "end": {
           "row": 5,
-          "column": 11
+          "column": 6
         },
         "value": {
           "node": "YAMLDate",
@@ -120,11 +120,11 @@
           "value": "2011-04-21T05:35:00.000Z",
           "start": {
             "row": 5,
-            "column": 14
+            "column": 9
           },
           "end": {
-            "row": 6,
-            "column": 4
+            "row": 5,
+            "column": 23
           }
         }
       },
@@ -133,11 +133,11 @@
         "keyName": "date5",
         "start": {
           "row": 6,
-          "column": 8
+          "column": 2
         },
         "end": {
           "row": 6,
-          "column": 12
+          "column": 6
         },
         "value": {
           "node": "YAMLDate",
@@ -145,22 +145,22 @@
           "value": "2011-06-02T20:45:30.000Z",
           "start": {
             "row": 6,
-            "column": 15
+            "column": 9
           },
           "end": {
-            "row": 8,
-            "column": 5
+            "row": 6,
+            "column": 27
           }
         }
       }
     ],
     "start": {
       "row": 1,
-      "column": 3
+      "column": 2
     },
     "end": {
-      "row": 8,
-      "column": 5
+      "row": 6,
+      "column": 27
     }
   },
   "start": {
@@ -168,7 +168,7 @@
     "column": 0
   },
   "end": {
-    "row": 8,
-    "column": 6
+    "row": 6,
+    "column": 28
   }
 }

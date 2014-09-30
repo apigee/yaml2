@@ -25,6 +25,31 @@
           "column": 6
         }
       }
+    },
+    {
+      "node": "YAMLHashKey",
+      "keyName": "you",
+      "start": {
+        "row": 1,
+        "column": 0
+      },
+      "end": {
+        "row": 1,
+        "column": 2
+      },
+      "value": {
+        "node": "YAMLInt",
+        "raw": "200",
+        "value": 200,
+        "start": {
+          "row": 1,
+          "column": 5
+        },
+        "end": {
+          "row": 1,
+          "column": 7
+        }
+      }
     }
   ],
   "start": {
@@ -32,7 +57,7 @@
     "column": 0
   },
   "end": {
-    "row": 0,
-    "column": 6
+    "row": 1,
+    "column": 7
   }
 }
