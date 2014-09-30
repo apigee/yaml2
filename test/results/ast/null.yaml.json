@@ -1,7 +1,10 @@
 {
+  "node": "YAMLDoc",
   "value": {
+    "node": "YAMLHash",
     "keys": [
       {
+        "node": "YAMLHashKey",
         "keyName": "test",
         "start": {
           "row": 1,
@@ -13,6 +16,7 @@
         },
         "value": {
           "raw": "A test for null values",
+          "node": "YAMLString",
           "value": "A test for null values",
           "start": {
             "row": 1,
@@ -25,6 +29,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "thisis",
         "start": {
           "row": 2,
@@ -35,6 +40,7 @@
           "column": 9
         },
         "value": {
+          "node": "YAMLNull",
           "raw": "null",
           "value": null,
           "start": {
@@ -48,6 +54,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "thistoo",
         "start": {
           "row": 3,
@@ -58,6 +65,7 @@
           "column": 11
         },
         "value": {
+          "node": "YAMLNull",
           "raw": "NULL",
           "value": null,
           "start": {
@@ -71,6 +79,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "notnull",
         "start": {
           "row": 4,
@@ -81,6 +90,7 @@
           "column": 12
         },
         "value": {
+          "node": "YAMLTrue",
           "raw": "yes",
           "value": true,
           "start": {
@@ -94,6 +104,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "tildeis",
         "start": {
           "row": 5,
@@ -105,6 +116,7 @@
         },
         "value": {
           "raw": "~",
+          "node": "YAMLString",
           "value": "~",
           "start": {
             "row": 6,
@@ -117,6 +129,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "capitalized",
         "start": {
           "row": 6,
@@ -127,6 +140,7 @@
           "column": 18
         },
         "value": {
+          "node": "YAMLNull",
           "raw": "Null",
           "value": null,
           "start": {
@@ -140,6 +154,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "end",
         "start": {
           "row": 7,
@@ -151,6 +166,7 @@
         },
         "value": {
           "raw": "test passed?",
+          "node": "YAMLString",
           "value": "test passed?",
           "start": {
             "row": 7,

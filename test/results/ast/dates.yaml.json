@@ -1,7 +1,10 @@
 {
+  "node": "YAMLDoc",
   "value": {
+    "node": "YAMLHash",
     "keys": [
       {
+        "node": "YAMLHashKey",
         "keyName": "date0",
         "start": {
           "row": 1,
@@ -12,6 +15,7 @@
           "column": 7
         },
         "value": {
+          "node": "YAMLDate",
           "raw": "2011-05-21",
           "value": "2011-05-21T00:00:00.000Z",
           "start": {
@@ -25,6 +29,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "date1",
         "start": {
           "row": 2,
@@ -35,6 +40,7 @@
           "column": 8
         },
         "value": {
+          "node": "YAMLDate",
           "raw": "2011-5-21",
           "value": "2011-05-21T00:00:00.000Z",
           "start": {
@@ -48,6 +54,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "date2",
         "start": {
           "row": 3,
@@ -58,6 +65,7 @@
           "column": 9
         },
         "value": {
+          "node": "YAMLDate",
           "raw": "2011-1-2",
           "value": "2011-01-02T00:00:00.000Z",
           "start": {
@@ -71,6 +79,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "date3",
         "start": {
           "row": 4,
@@ -81,6 +90,7 @@
           "column": 10
         },
         "value": {
+          "node": "YAMLDate",
           "raw": "2011-02-21 17:56",
           "value": "2011-02-21T17:56:00.000Z",
           "start": {
@@ -94,6 +104,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "date4",
         "start": {
           "row": 5,
@@ -104,6 +115,7 @@
           "column": 11
         },
         "value": {
+          "node": "YAMLDate",
           "raw": "2011-04-21 5:35",
           "value": "2011-04-21T05:35:00.000Z",
           "start": {
@@ -117,6 +129,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "date5",
         "start": {
           "row": 6,
@@ -127,6 +140,7 @@
           "column": 12
         },
         "value": {
+          "node": "YAMLDate",
           "raw": "2011-06-02 20:45:30",
           "value": "2011-06-02T20:45:30.000Z",
           "start": {

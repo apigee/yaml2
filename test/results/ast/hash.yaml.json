@@ -1,7 +1,10 @@
 {
+  "node": "YAMLDoc",
   "value": {
+    "node": "YAMLHash",
     "keys": [
       {
+        "node": "YAMLHashKey",
         "keyName": "users",
         "start": {
           "row": 1,
@@ -12,8 +15,10 @@
           "column": 7
         },
         "value": {
+          "node": "YAMLHash",
           "keys": [
             {
+              "node": "YAMLHashKey",
               "keyName": "tj",
               "start": {
                 "row": 2,
@@ -24,8 +29,10 @@
                 "column": 7
               },
               "value": {
+                "node": "YAMLHash",
                 "keys": [
                   {
+                    "node": "YAMLHashKey",
                     "keyName": "name",
                     "start": {
                       "row": 3,
@@ -37,6 +44,7 @@
                     },
                     "value": {
                       "raw": "tj",
+                      "node": "YAMLString",
                       "value": "tj",
                       "start": {
                         "row": 4,
@@ -49,6 +57,7 @@
                     }
                   },
                   {
+                    "node": "YAMLHashKey",
                     "keyName": "age",
                     "start": {
                       "row": 4,
@@ -59,6 +68,7 @@
                       "column": 12
                     },
                     "value": {
+                      "node": "YAMLInt",
                       "raw": "23",
                       "value": 23,
                       "start": {
@@ -72,6 +82,7 @@
                     }
                   },
                   {
+                    "node": "YAMLHashKey",
                     "keyName": "email",
                     "start": {
                       "row": 5,
@@ -83,6 +94,7 @@
                     },
                     "value": {
                       "raw": "'tj@vision-media.ca'",
+                      "node": "YAMLString",
                       "value": "tj@vision-media.ca",
                       "start": {
                         "row": 5,
@@ -106,6 +118,7 @@
               }
             },
             {
+              "node": "YAMLHashKey",
               "keyName": "bob",
               "start": {
                 "row": 7,
@@ -116,8 +129,10 @@
                 "column": 4
               },
               "value": {
+                "node": "YAMLHash",
                 "keys": [
                   {
+                    "node": "YAMLHashKey",
                     "keyName": "name",
                     "start": {
                       "row": 7,
@@ -129,6 +144,7 @@
                     },
                     "value": {
                       "raw": "'bob'",
+                      "node": "YAMLString",
                       "value": "bob",
                       "start": {
                         "row": 8,
@@ -141,6 +157,7 @@
                     }
                   },
                   {
+                    "node": "YAMLHashKey",
                     "keyName": "age",
                     "start": {
                       "row": 9,
@@ -151,6 +168,7 @@
                       "column": 3
                     },
                     "value": {
+                      "node": "YAMLInt",
                       "raw": "27",
                       "value": 27,
                       "start": {
@@ -175,6 +193,7 @@
               }
             },
             {
+              "node": "YAMLHashKey",
               "keyName": "ted",
               "start": {
                 "row": 9,
@@ -185,8 +204,10 @@
                 "column": 15
               },
               "value": {
+                "node": "YAMLHash",
                 "keys": [
                   {
+                    "node": "YAMLHashKey",
                     "keyName": "name",
                     "start": {
                       "row": 9,
@@ -198,6 +219,7 @@
                     },
                     "value": {
                       "raw": "ted",
+                      "node": "YAMLString",
                       "value": "ted",
                       "start": {
                         "row": 9,
@@ -210,6 +232,7 @@
                     }
                   },
                   {
+                    "node": "YAMLHashKey",
                     "keyName": "age",
                     "start": {
                       "row": 9,
@@ -220,6 +243,7 @@
                       "column": 33
                     },
                     "value": {
+                      "node": "YAMLInt",
                       "raw": "32",
                       "value": 32,
                       "start": {
@@ -233,6 +257,7 @@
                     }
                   },
                   {
+                    "node": "YAMLHashKey",
                     "keyName": "email",
                     "start": {
                       "row": 9,
@@ -244,6 +269,7 @@
                     },
                     "value": {
                       "raw": "ted@tedtalks.com ",
+                      "node": "YAMLString",
                       "value": "ted@tedtalks.com ",
                       "start": {
                         "row": 9,
@@ -278,6 +304,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "country",
         "start": {
           "row": 11,
@@ -288,8 +315,10 @@
           "column": 8
         },
         "value": {
+          "node": "YAMLHash",
           "keys": [
             {
+              "node": "YAMLHashKey",
               "keyName": "name",
               "start": {
                 "row": 11,
@@ -301,6 +330,7 @@
               },
               "value": {
                 "raw": "Österreich",
+                "node": "YAMLString",
                 "value": "Österreich",
                 "start": {
                   "row": 12,
@@ -313,6 +343,7 @@
               }
             },
             {
+              "node": "YAMLHashKey",
               "keyName": "website",
               "start": {
                 "row": 12,
@@ -324,6 +355,7 @@
               },
               "value": {
                 "raw": "http://en.wikipedia.org/wiki/Austria",
+                "node": "YAMLString",
                 "value": "http://en.wikipedia.org/wiki/Austria",
                 "start": {
                   "row": 12,
@@ -347,6 +379,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "space",
         "start": {
           "row": 14,
@@ -357,8 +390,10 @@
           "column": 11
         },
         "value": {
+          "node": "YAMLHash",
           "keys": [
             {
+              "node": "YAMLHashKey",
               "keyName": "description",
               "start": {
                 "row": 14,
@@ -370,6 +405,7 @@
               },
               "value": {
                 "raw": "space, the final frontier",
+                "node": "YAMLString",
                 "value": "space, the final frontier",
                 "start": {
                   "row": 14,
@@ -393,6 +429,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "/path",
         "start": {
           "row": 16,
@@ -403,8 +440,10 @@
           "column": 13
         },
         "value": {
+          "node": "YAMLHash",
           "keys": [
             {
+              "node": "YAMLHashKey",
               "keyName": "description",
               "start": {
                 "row": 16,
@@ -416,6 +455,7 @@
               },
               "value": {
                 "raw": "this is a path",
+                "node": "YAMLString",
                 "value": "this is a path",
                 "start": {
                   "row": 17,
@@ -439,6 +479,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "$ref",
         "start": {
           "row": 18,
@@ -449,8 +490,10 @@
           "column": 15
         },
         "value": {
+          "node": "YAMLHash",
           "keys": [
             {
+              "node": "YAMLHashKey",
               "keyName": "description",
               "start": {
                 "row": 18,
@@ -462,6 +505,7 @@
               },
               "value": {
                 "raw": "this is a JSON Schema $ref",
+                "node": "YAMLString",
                 "value": "this is a JSON Schema $ref",
                 "start": {
                   "row": 18,
@@ -485,6 +529,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "brackets",
         "start": {
           "row": 20,
@@ -495,8 +540,10 @@
           "column": 17
         },
         "value": {
+          "node": "YAMLHash",
           "keys": [
             {
+              "node": "YAMLHashKey",
               "keyName": "square",
               "start": {
                 "row": 20,
@@ -508,6 +555,7 @@
               },
               "value": {
                 "raw": "Square [brackets] can go in the middle of strings",
+                "node": "YAMLString",
                 "value": "Square [brackets] can go in the middle of strings",
                 "start": {
                   "row": 20,
@@ -520,6 +568,7 @@
               }
             },
             {
+              "node": "YAMLHashKey",
               "keyName": "squiggle",
               "start": {
                 "row": 21,
@@ -531,6 +580,7 @@
               },
               "value": {
                 "raw": "Squiggle {brackets} can also go in the middle of strings!",
+                "node": "YAMLString",
                 "value": "Squiggle {brackets} can also go in the middle of strings!",
                 "start": {
                   "row": 21,
@@ -543,6 +593,7 @@
               }
             },
             {
+              "node": "YAMLHashKey",
               "keyName": "extrasquare",
               "start": {
                 "row": 22,
@@ -554,6 +605,7 @@
               },
               "value": {
                 "raw": "[Scratch that] brackets can go at the beginning as long as they close and have text after.",
+                "node": "YAMLString",
                 "value": "[Scratch that] brackets can go at the beginning as long as they close and have text after.",
                 "start": {
                   "row": 22,
@@ -566,6 +618,7 @@
               }
             },
             {
+              "node": "YAMLHashKey",
               "keyName": "extrasquiggle",
               "start": {
                 "row": 23,
@@ -577,6 +630,7 @@
               },
               "value": {
                 "raw": "{Scratch that} squigs can go at the beginning also!",
+                "node": "YAMLString",
                 "value": "{Scratch that} squigs can go at the beginning also!",
                 "start": {
                   "row": 23,

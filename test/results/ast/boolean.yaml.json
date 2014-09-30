@@ -1,7 +1,10 @@
 {
+  "node": "YAMLDoc",
   "value": {
+    "node": "YAMLHash",
     "keys": [
       {
+        "node": "YAMLHashKey",
         "keyName": "title",
         "start": {
           "row": 1,
@@ -13,6 +16,7 @@
         },
         "value": {
           "raw": "Some Title",
+          "node": "YAMLString",
           "value": "Some Title",
           "start": {
             "row": 1,
@@ -25,6 +29,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "falseme",
         "start": {
           "row": 2,
@@ -36,6 +41,7 @@
         },
         "value": {
           "raw": "I can see this",
+          "node": "YAMLString",
           "value": "I can see this",
           "start": {
             "row": 2,
@@ -48,6 +54,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "what",
         "start": {
           "row": 3,
@@ -58,6 +65,7 @@
           "column": 8
         },
         "value": {
+          "node": "YAMLFalse",
           "raw": "no",
           "value": false,
           "start": {
@@ -71,6 +79,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "say",
         "start": {
           "row": 4,
@@ -81,6 +90,7 @@
           "column": 8
         },
         "value": {
+          "node": "YAMLTrue",
           "raw": "yes",
           "value": true,
           "start": {
@@ -94,6 +104,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "good",
         "start": {
           "row": 5,
@@ -104,6 +115,7 @@
           "column": 10
         },
         "value": {
+          "node": "YAMLTrue",
           "raw": "true",
           "value": true,
           "start": {
@@ -117,6 +129,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "bad",
         "start": {
           "row": 6,
@@ -127,6 +140,7 @@
           "column": 10
         },
         "value": {
+          "node": "YAMLFalse",
           "raw": "false",
           "value": false,
           "start": {
@@ -140,6 +154,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "trueme",
         "start": {
           "row": 7,
@@ -151,6 +166,7 @@
         },
         "value": {
           "raw": "found",
+          "node": "YAMLString",
           "value": "found",
           "start": {
             "row": 8,
@@ -163,6 +179,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "hope",
         "start": {
           "row": 8,
@@ -174,6 +191,7 @@
         },
         "value": {
           "raw": "to see this",
+          "node": "YAMLString",
           "value": "to see this",
           "start": {
             "row": 8,

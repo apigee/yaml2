@@ -1,8 +1,11 @@
 {
+  "node": "YAMLDoc",
   "value": {
+    "node": "YAMLList",
     "items": [
       {
         "raw": "lots of milk",
+        "node": "YAMLString",
         "value": "lots of milk",
         "start": {
           "row": 1,
@@ -15,6 +18,7 @@
       },
       {
         "raw": "'cookies'",
+        "node": "YAMLString",
         "value": "cookies",
         "start": {
           "row": 2,
@@ -27,6 +31,7 @@
       },
       {
         "raw": "'something'",
+        "node": "YAMLString",
         "value": "something",
         "start": {
           "row": 3,

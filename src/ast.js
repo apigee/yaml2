@@ -107,30 +107,36 @@ AST.prototype.ignoreWhitespace = function() {
 }
 
 // constructor functions
-function YAMLDoc() {}
-
+function YAMLDoc() {
+  this.node = 'YAMLDoc';
+}
 function YAMLHash() {
+  this.node = 'YAMLHash';
   this.keys = [];
 }
 function YAMLHashKey(id) {
+  this.node = 'YAMLHashKey';
   this.keyName = id[1][0]
 }
-
 function YAMLList() {
+  this.node = 'YAMLList';
   this.items = [];
 }
-
 function YAMLInt(token){
+  this.node = 'YAMLInt';
   this.raw = token[1][0];
   this.value = parseInt(token[1][0]);
 }
 function YAMLFloat(token) {
+  this.node = 'YAMLFloat';
   this.raw = token[1][0];
   this.value = parseFloat(token[1][0]);
 }
 function YAMLString(token) {
   var raw = token[1][0];
+
   this.raw = raw;
+  this.node = 'YAMLString';
 
   if (raw[0] === raw[raw.length - 1] && (raw[0] === '"' || raw[0] === '\'')){
     // Remove quotation marks
@@ -140,18 +146,22 @@ function YAMLString(token) {
   }
 }
 function YAMLTrue(token) {
+  this.node = 'YAMLTrue';
   this.raw = token[1][0];
   this.value = true
 }
 function YAMLFalse(token) {
+  this.node = 'YAMLFalse';
   this.raw = token[1][0];
   this.value = false;
 }
 function YAMLNull(token) {
+  this.node = 'YAMLNull';
   this.raw = token[1][0];
   this.value = null;
 }
 function YAMLDate(token) {
+  this.node = 'YAMLDate';
   this.raw = token[1][0];
   this.value = helpers.parseTimestamp(token[1]);
 }

@@ -1,7 +1,10 @@
 {
+  "node": "YAMLDoc",
   "value": {
+    "node": "YAMLHash",
     "keys": [
       {
+        "node": "YAMLHashKey",
         "keyName": "pid",
         "start": {
           "row": 1,
@@ -13,6 +16,7 @@
         },
         "value": {
           "raw": "'/home/www/pids/thin.pid'",
+          "node": "YAMLString",
           "value": "/home/www/pids/thin.pid",
           "start": {
             "row": 1,
@@ -25,6 +29,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "wait",
         "start": {
           "row": 2,
@@ -35,6 +40,7 @@
           "column": 7
         },
         "value": {
+          "node": "YAMLInt",
           "raw": "30",
           "value": 30,
           "start": {
@@ -48,6 +54,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "port",
         "start": {
           "row": 3,
@@ -58,6 +65,7 @@
           "column": 8
         },
         "value": {
+          "node": "YAMLInt",
           "raw": "3000",
           "value": 3000,
           "start": {
@@ -71,6 +79,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "timeout",
         "start": {
           "row": 4,
@@ -81,6 +90,7 @@
           "column": 12
         },
         "value": {
+          "node": "YAMLInt",
           "raw": "15",
           "value": 15,
           "start": {
@@ -94,6 +104,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "servers",
         "start": {
           "row": 5,
@@ -104,6 +115,7 @@
           "column": 1
         },
         "value": {
+          "node": "YAMLInt",
           "raw": "2",
           "value": 2,
           "start": {
@@ -117,6 +129,7 @@
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "require",
         "start": {
           "row": 6,
@@ -127,12 +140,14 @@
           "column": 1
         },
         "value": {
+          "node": "YAMLList",
           "items": [],
           "start": 99,
           "end": 100
         }
       },
       {
+        "node": "YAMLHashKey",
         "keyName": "dbg-mode",
         "start": {
           "row": 7,
@@ -143,6 +158,7 @@
           "column": 16
         },
         "value": {
+          "node": "YAMLFalse",
           "raw": "false",
           "value": false,
           "start": {

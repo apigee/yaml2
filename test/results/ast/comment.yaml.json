@@ -1,6 +1,8 @@
 {
+  "node": "YAMLHash",
   "keys": [
     {
+      "node": "YAMLHashKey",
       "keyName": "for",
       "start": {
         "row": 0,
@@ -12,6 +14,7 @@
       },
       "value": {
         "raw": "now",
+        "node": "YAMLString",
         "value": "now",
         "start": {
           "row": 0,

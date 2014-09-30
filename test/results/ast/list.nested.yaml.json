@@ -1,9 +1,13 @@
 {
+  "node": "YAMLDoc",
   "value": {
+    "node": "YAMLList",
     "items": [
       {
+        "node": "YAMLList",
         "items": [
           {
+            "node": "YAMLInt",
             "raw": "1",
             "value": 1,
             "start": {
@@ -16,6 +20,7 @@
             }
           },
           {
+            "node": "YAMLInt",
             "raw": "2",
             "value": 2,
             "start": {
@@ -28,8 +33,10 @@
             }
           },
           {
+            "node": "YAMLList",
             "items": [
               {
+                "node": "YAMLInt",
                 "raw": "3",
                 "value": 3,
                 "start": {
@@ -42,8 +49,10 @@
                 }
               },
               {
+                "node": "YAMLList",
                 "items": [
                   {
+                    "node": "YAMLInt",
                     "raw": "4",
                     "value": 4,
                     "start": {
