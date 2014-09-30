@@ -1,58 +1,35 @@
 {
-    "keys": [
-        {
-            "keyName": "for",
-            "start": {
-                "row": 1,
-                "column": 1
-            },
-            "end": {
-                "row": 1,
-                "column": 3
-            },
-            "value": {
-                "raw": "now",
-                "value": "now",
-                "start": {
-                    "row": 1,
-                    "column": 6
-                },
-                "end": {
-                    "row": 1,
-                    "column": 8
-                }
-            }
+  "keys": [
+    {
+      "keyName": "for",
+      "start": {
+        "row": 0,
+        "column": 0
+      },
+      "end": {
+        "row": 0,
+        "column": 2
+      },
+      "value": {
+        "raw": "now",
+        "value": "now",
+        "start": {
+          "row": 0,
+          "column": 5
         },
-        {
-            "keyName": "two",
-            "start": {
-                "row": 2,
-                "column": 2
-            },
-            "end": {
-                "row": 2,
-                "column": 4
-            },
-            "value": {
-                "raw": "2",
-                "value": 2,
-                "start": {
-                    "row": 3,
-                    "column": 1
-                },
-                "end": {
-                    "row": 3,
-                    "column": 1
-                }
-            }
+        "end": {
+          "row": 0,
+          "column": 7
         }
-    ],
-    "start": {
-        "row": 1,
-        "column": 1
-    },
-    "end": {
-        "row": 3,
-        "column": 1
+      }
     }
+  ],
+  "start": {
+    "row": 0,
+    "column": 0
+  },
+  "end": {
+    "row": 0,
+    "column": 7
+  }
 }
