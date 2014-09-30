@@ -25,6 +25,56 @@
           "column": 7
         }
       }
+    },
+    {
+      "node": "YAMLHashKey",
+      "keyName": "hash",
+      "start": {
+        "row": 3,
+        "column": 0
+      },
+      "end": {
+        "row": 3,
+        "column": 3
+      },
+      "value": {
+        "node": "YAMLHash",
+        "keys": [
+          {
+            "node": "YAMLHashKey",
+            "keyName": "son",
+            "start": {
+              "row": 4,
+              "column": 2
+            },
+            "end": {
+              "row": 4,
+              "column": 4
+            },
+            "value": {
+              "raw": "one",
+              "node": "YAMLString",
+              "value": "one",
+              "start": {
+                "row": 4,
+                "column": 7
+              },
+              "end": {
+                "row": 4,
+                "column": 9
+              }
+            }
+          }
+        ],
+        "start": {
+          "row": 4,
+          "column": 2
+        },
+        "end": {
+          "row": 4,
+          "column": 9
+        }
+      }
     }
   ],
   "start": {
@@ -32,7 +82,7 @@
     "column": 0
   },
   "end": {
-    "row": 2,
-    "column": 7
+    "row": 4,
+    "column": 9
   }
 }

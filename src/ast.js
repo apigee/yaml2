@@ -218,7 +218,9 @@ AST.prototype.parseHash = function() {
     this.assignStartEnd(hashKey, id);
     if (this.accept('indent')) {
       hashKey.value = this.parse();
-      this.expect('dedent', 'hash not properly dedented');
+      if (this.tokens.length){
+        this.expect('dedent', 'hash not properly dedented');
+      }
     } else {
       hashKey.value = this.parse();
     }

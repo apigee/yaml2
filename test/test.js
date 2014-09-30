@@ -26,6 +26,8 @@ require('chai').should();
       ast = JSON.parse(ast);
 
       var result = yaml.ast(y);
+      // return fs.writeFileSync( path.join(__dirname, 'results/ast/'+fileName+'.yaml.json'),
+      //   JSON.stringify(result, null, 2));
       result = JSON.parse(JSON.stringify(result));
       result.should.deep.equal(ast);
     });
