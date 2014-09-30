@@ -44,7 +44,7 @@ Run:
 
 ### Known bugs and missing features
 
-  * Inline commnets: `key: value # this is value
+  * Inline commnets: `key: value # this is value`
   * Inline hash with key quoted: `hash: {"me": 1}`
 
 # License 
